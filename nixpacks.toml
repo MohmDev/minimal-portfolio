@@ -21,7 +21,7 @@ nixpkgsArchive = 'e05605ec414618eab4a7a6aea8b38f6fbbcc8f08'
 
 [phases.install]
 dependsOn = ['setup']
-cmds = ['pnpm install --frozen-lockfile']
+cmds = ['pnpm install']
 cacheDirectories = ['/root/.local/share/pnpm/store/v3']
 paths = ['/app/node_modules/.bin']
 
