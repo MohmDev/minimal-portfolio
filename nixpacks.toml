@@ -16,7 +16,7 @@ cacheDirectories = [
 
 [phases.install]
 dependsOn = ['setup']
-cmds = ['pnpm ci']
+cmds = ['pnpm install']
 cacheDirectories = ['/root/.local/share/pnpm/store/v3']
 paths = ['/app/node_modules/.bin']
 
