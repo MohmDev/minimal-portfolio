@@ -5,7 +5,7 @@ buildImage = 'ghcr.io/railwayapp/nixpacks:ubuntu-1722902622'
 CI = 'true'
 NIXPACKS_METADATA = 'node'
 NODE_ENV = 'production'
-NPM_CONFIG_PRODUCTION = 'false'
+NPM_CONFIG_PRODUCTION = 'true'
 [phases.build]
 dependsOn = ['install']
 cmds = ['pnpm run build']
