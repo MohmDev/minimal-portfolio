@@ -6,6 +6,5 @@ nixpacksConfigPath = "nixpacks.toml"
 region = "europe-west4"
 runtime = "V2"
 numReplicas = 1
-sleepApplication = false
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
