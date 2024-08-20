@@ -18,7 +18,7 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   // set true for the initial state so that nav bar is visible in the hero section
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useMotionValueEvent(scrollYProgress, 'change', (current) => {
     // Check if current is not undefined and is a number
@@ -27,12 +27,12 @@ export const FloatingNav = ({
 
       if (scrollYProgress.get() < 0.05) {
         // also set true for the initial state
-        setVisible(true);
+        setVisible(false);
       } else {
         if (direction < 0) {
-          setVisible(true);
-        } else {
           setVisible(false);
+        } else {
+          setVisible(true);
         }
       }
     }
